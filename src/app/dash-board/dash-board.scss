@@ -1,0 +1,31 @@
+.scheduler-grid {
+  display: grid;
+  grid-template-columns: 200px repeat(7, 1fr); // Cột tên cố định, 7 cột ngày tự chia đều
+
+  .grid-header, .grid-row {
+    display: contents; // Để các con trực tiếp tham gia vào grid chung
+  }
+
+  .day-cell {
+    border: 0.5px solid #eee;
+    min-height: 80px;
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+// Định nghĩa màu sắc cho từng loại trạng thái
+.event-card {
+  border-radius: 8px;
+  padding: 10px;
+  width: 100%;
+  text-align: center;
+  font-weight: bold;
+  font-size: 12px;
+
+  &.nghi-phep { border: 2px solid #ff7043; color: #ff7043; background: #fff5f2; }
+  &.cong-tac { border: 2px solid #26dad2; color: #26dad2; background: #f0fdfc; }
+  &.den-muon { border: 2px solid #ffca28; color: #8d6e63; background: #fffbe6; }
+}
