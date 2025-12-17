@@ -1,0 +1,14 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden; /* Chống tràn ngang nếu có scroll */
+}
+
+/* Đảm bảo tag root của Angular cũng chiếm hết màn hình */
+.my-app-root {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
