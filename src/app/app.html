@@ -1,29 +1,29 @@
-<div class="my-app-root mat-typography">
+<div class="my-app-root mat-typography container">
   <header class="main-header">
-    <nav class="nav-container">
-      <div class="nav-links">
+    <nav class="nav-container mt-5">
+      <div class="nav-links d-flex justify-content-around">
         <a routerLink="/dashboard" routerLinkActive="active" class="nav-item">
-          <mat-icon>grid_view</mat-icon>
+          <mat-icon class="me-2">grid_view</mat-icon>
           <span>Dashboard</span>
         </a>
 
         <a routerLink="/members" routerLinkActive="active" class="nav-item">
-          <mat-icon>person</mat-icon>
+          <mat-icon class="me-2">person</mat-icon>
           <span>Quản lý thành viên</span>
         </a>
 
         <a routerLink="/reports" routerLinkActive="active" class="nav-item">
-          <mat-icon>chat_bubble_outline</mat-icon>
+          <mat-icon class="me-2">chat_bubble_outline</mat-icon>
           <span>Báo cáo</span>
         </a>
       </div>
 
-      <div class="header-actions">
-        <button mat-icon-button><mat-icon>notifications_none</mat-icon></button>
-        <div class="user-profile">
-          <img src="assets/avatar.jpg" alt="User Avatar">
-        </div>
-      </div>
+<!--      <div class="header-actions">-->
+<!--        <button mat-icon-button><mat-icon>notifications_none</mat-icon></button>-->
+<!--        <div class="user-profile">-->
+<!--          <img src="assets/avatar.jpg" alt="User Avatar">-->
+<!--        </div>-->
+<!--      </div>-->
     </nav>
   </header>
 
